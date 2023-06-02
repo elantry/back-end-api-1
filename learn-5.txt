@@ -1,0 +1,37 @@
+npm init -y
+npm i express dotenv mongoose bcryptjs jsonwebtoken cookie-parser
+
+npm i -D nodemon
+npm i express-async-handler
+Usage:
+const asyncHandler = require('express-async-handler')
+
+express.get('/', asyncHandler(async (req, res, next) => {
+	const bar = await foo.findAll();
+	res.send(bar)
+}))
+Without express-async-handler
+
+express.get('/',(req, res, next) => {
+    foo.findAll()
+    .then ( bar => {
+       res.send(bar)
+     } )
+    .catch(next); // error passed on to the error handling route
+})
+يتم استخدام بى كربيت لوضع ارقام عشوائية على الباسورد لتجعله اقوى للاختراق و تاخد اثنين الباسورد و الرقم
+و يتم وضعها مع الموديل للتطبيق على الكل و العمل بها موجود فى المشروع المرفق و بعده يتم تشفير الباسورد فى الداتا بيس
+ثم نقوم باضافة توكن لليوزر 
+------
+npm create vite@latest frontend
+لعمل الباكاندو الفرونت اند مع بعض
+npm i -D concurrently
+npm i react-bootstrap react-icons bootstrap
+ثم يتم عمل اولا الكمبونانت الاول عباره عن header + footer
+و بعدين يتم عمل ملف للاسكرين يكون عبارة عن الهوم و باقى الصفحات التى يتم الانتقال اليها
+npm i react-router-dom react-router-bootstrap
+for nav.link
+npm i @reduxjs/toolkit react-redux
+npm i react-toastify
+------------------
+npm i @fvilers/disable-react-devtools
